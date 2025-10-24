@@ -22,17 +22,6 @@ function App() {
             },
           ]}
         />
-        <Column
-          title="Completed"
-          items={[
-            {
-              id: "3",
-              title: "Setup project",
-              status: "completed",
-              isEditing: false,
-            },
-          ]}
-        />
       </div>
     </div>
   );
