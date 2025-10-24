@@ -1,6 +1,12 @@
+import { useImmer } from "use-immer";
 import { Column } from "./components/Column";
 
 function App() {
+  const [state, setState] = useImmer({
+    todo: [],
+    inProgress: [],
+    completed: [],
+  });
   return (
     <div className="container py-10">
       <h1 className="text-2xl font-semibold mb-6">Task Board</h1>
